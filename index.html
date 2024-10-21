@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Tech</title>
+    <link rel="icon" href="ruta/a/favicon_generico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/Style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="menu-btn" id="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+    <div class="menu-items" id="menu-items">
+        <a href="../index.html">Inicio</a>
+        <a href="Pages/producto.html">Celulares</a>
+        <a href="#">Accesorios</a>
+        <a href="#">Ofertas</a>
+        <a href="Pages/login.html">Iniciar Sesión</a>
+        <a href="#" id="ver-carrito">Ver Carrito (<span id="carrito-count">0</span>)</a>
+    </div>
+    </nav>
+
+    <!-- Productos -->
+    <section id="productos" class="container">
+        <h2>Productos Disponibles</h2>
+        <div id="lista-productos">
+            <!-- Aquí se insertarán los productos dinámicamente -->
+        </div>
+    </section>
+
+    <!-- Ventana deslizante para el carrito -->
+    <div id="carrito-slider" class="carrito-slider">
+        <h2>Tu Carrito</h2>
+        <div id="productos-carrito"></div>
+        <p><strong>Total:</strong> $<span id="total-carrito">0</span></p>
+        <button class="btn" onclick="vaciarCarrito()">Vaciar Carrito</button>
+        <button class="btn" onclick="cerrarCarrito()">Cerrar</button>
+    </div>
+
+    <!-- Mensaje dinámico -->
+    <div id="mensaje-dinamico" class="mensaje-dinamico"></div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Smart Tech. Todos los derechos reservados.</p>
+        
+<div class="redes-conteiner">
+  <ul>
+    <li class="Instagram"><a href="#"><i class="fa fa-instagram fa-2x " aria-hidden="true"></i></a></li>
+  </ul>
+</div>
+    </footer>
+
+    <!-- Script para el carrito y los productos -->
+    <script src="JS/producto.js"></script>
+    <script src="JS/carrito.js"></script>
+   
+
+    
+</body>
+</html>

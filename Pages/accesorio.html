@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Producto - Smart Tech</title>
+    <link rel="icon" href="ruta/a/favicon_generico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/Style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="../index.html">Inicio</a>
+        <a href="producto.html">Ver Todos los Productos</a>
+        <a href="#">Accesorios</a>
+        <a href="#">Ofertas</a>
+        <a href="#">FAQ</a>
+        <a href="#">Contacto</a>
+        <a href="#" id="ver-carrito">Ver Carrito (<span id="carrito-count">0</span>)</a>
+    
+    </nav>
+
+    <!-- accesorios -->
+    <section id="accesorios" class="container">
+        <h2>Accesorios Disponibles</h2>
+        <div id="lista-accesorios">
+            <!-- Aquí se insertarán los productos dinámicamente -->
+        </div>
+    </section>
+
+    <!-- Ventana deslizante para el carrito -->
+    <div id="carrito-slider" class="carrito-slider">
+        <h2>Tu Carrito</h2>
+        <div id="productos-carrito"></div>
+        <p><strong>Total:</strong> $<span id="total-carrito">0</span></p>
+        <button class="btn" onclick="vaciarCarrito()">Vaciar Carrito</button>
+        <button class="btn" onclick="cerrarCarrito()">Cerrar</button>
+    </div>
+
+    <!-- Mensaje dinámico -->
+    <div id="mensaje-dinamico" class="mensaje-dinamico"></div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Smart Tech. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../JS/producto.js"></script> <!-- Cargar los productos -->
+    <script src="../JS/carrito.js"></script> <!-- Cargar el carrito -->
+
+</body>
+</html>
